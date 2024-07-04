@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lucene.Net" Version="4.8.0-beta00016" />
+      <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00016" />
+      <PackageReference Include="Lucene.Net.Facet" Version="4.8.0-beta00016" />
+      <PackageReference Include="Lucene.Net.QueryParser" Version="4.8.0-beta00016" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Lucene.Net.Store.Azure">
+        <HintPath>..\..\Lucene.Net.Store.Azure-master\source\Lucene.Net.Store.Azure.Tests\bin\Debug\net8.0\Lucene.Net.Store.Azure.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
